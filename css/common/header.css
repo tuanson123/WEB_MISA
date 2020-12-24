@@ -5,4 +5,16 @@
     border-bottom-color: #e5e5e5;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    display: flex;
+    font-weight: bold;
 }
+
+    .header .header-select{
+        
+        margin: auto 30px 30px;
+        /*align-self: center;*/
+    }
+    .header .account-infor {
+        margin: auto 0;
+        
+    }
