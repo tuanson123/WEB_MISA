@@ -12,7 +12,8 @@
     height:60px;
     background-color:aqua;
 }
-.navbar .content{
-    width:100px;
+.navbar .navbar-content{
+    width:100%;
+
 
 }
