@@ -7,14 +7,41 @@
     border-bottom-width: 1px;
     display: flex;
     font-weight: bold;
+    position: relative;
 }
 
-    .header .header-select{
-        
-        margin: auto 30px 30px;
-        /*align-self: center;*/
+    .header .header-select {
+        position: absolute;
+        left: 16px;
+        align-self: center;
+        font-size: 17px;
     }
+
     .header .account-infor {
         margin: auto 0;
-        
+        display: flex;
+        position: absolute;
+        right: 30px;
+        align-self: center;
     }
+
+        .header .account-infor .account-img {
+            background-image: url('../../content/icon/avatar-default.png');
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+            margin-right: 16px;
+        }
+
+        .header .account-infor .account-option {
+            background-image: url('../../content/icon/option.png');
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+            margin-left: 16px;
+        }
+
+        .header .account-infor .account-name {
+            margin: auto 0;
+        }
+
