@@ -1,21 +1,33 @@
-﻿.content{
-    height:calc(100vh - 61px);
-    width:calc(100% - 221px);
-    background-color:#e9ebee;
-    position:absolute;
-    left:221px;
-    top:61px;
+﻿.content {
+    height: calc(100vh - 61px);
+    width: calc(100% - 221px);
+    background-color: #ffffff;
+    position: absolute;
+    left: 221px;
+    top: 61px;
 }
     /*page-title*/
-.content .page-title{
+    .content .header-content {
+        padding: 16px;
+        display: flex;
+        align-items: center;
+    }
 
-}
-/*filter-bar*/
-.content .filter-bar {
-}
-/*grid*/
-.content .grid {
-}
-/*paging-bar*/
-.content .paging-bar {
-}
+        .content .header-content .title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .content .header-content .page-future {
+            position: absolute;
+            right: 16px;
+            
+        }
+        /*filter-bar*/
+        .content .filter-bar {
+        }
+    /*grid*/
+    .content .grid {
+    }
+    /*paging-bar*/
+    .content .paging-bar {
+    }
