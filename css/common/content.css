@@ -1,0 +1,8 @@
+﻿.content{
+    height:calc(100vh - 61px);
+    width:calc(100% - 221px);
+    background-color:#e9ebee;
+    position:absolute;
+    left:221px;
+    top:61px;
+}
