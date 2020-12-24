@@ -1,0 +1,14 @@
+﻿.filter-bar {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    height:40px;
+    background-color:#ccc;
+}
+.filter-bar .filter-left{
+    
+}
+    .filter-bar .filter-right {
+        position:absolute;
+        right:16px;
+    }

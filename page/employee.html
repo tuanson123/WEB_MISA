@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link href="../css/common/grit.css" rel="stylesheet" />
+    <link href="../css/common/toolbar.css" rel="stylesheet" />
+    <link href="../css/common/input.css" rel="stylesheet" />
+    <link href="../css/common/icon.css" rel="stylesheet" />
     <link href="../css/common/button.css" rel="stylesheet" />
     <link href="../css/common/icon.css" rel="stylesheet" />
     <link href="../css/common/header.css" rel="stylesheet" />
@@ -63,8 +67,8 @@
     <div class="header">
         <div class="header-select">
             <b>Nhà hàng biển Đông</b>
-            
-            
+
+
         </div>
         <div class="account-infor">
             <div class="account-img"></div>
@@ -76,16 +80,83 @@
         <div class="header-content">
             <div class="title">Danh sách nhân viên</div>
             <div class="page-future">
-                <button>
-                    <div class="m-btn m-btn-default">
-                        <div class="icon-add"></div>
-                        <div class="btn-text">Thêm nhân viên</div>
-                    </div>
+                <button class="m-btn m-btn-default">
+                    <div class="icon-add"></div>
+                    <div class="btn-text">Thêm nhân viên</div>
+
+                </button>
+            </div>
+
+        </div>
+        <div class="filter-bar">
+            <div class="filter-left">
+                <input class="icon-search input-search" type="text" placeholder="Tìm kiếm theo mã, Tên nhân viên" style="width:200px" />
+                <select>
+                    <option>Phòng đào tạo</option>
+                </select>
+            </div>
+            <div class="filter-right">
+                <button class="m-second-button m-btn-refresh">
+
                 </button>
             </div>
         </div>
-        <div class="filter-bar"></div>
-        <div class="grid"></div>
+        <div class="grid grid-employee">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã nhân viên</th>
+                        <th>Họ và tên</th>
+                        <th>Gioi tính</th>
+                        <th>Ngày sinh</th>
+                        <th>Số điện thoại</th>
+                        <th>Địa chỉ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NV000001</td>
+                        <td>Đỗ Tuấn Sơn</td>
+                        <td>NAM</td>
+                        <td>19/08/1998</td>
+                        <td>012346789</td>
+                        <td>Hải Phòng</td>
+                    </tr>
+                    <tr>
+                        <td>NV000001</td>
+                        <td>Đỗ Tuấn Sơn</td>
+                        <td>NAM</td>
+                        <td>19/08/1998</td>
+                        <td>012346789</td>
+                        <td>Hải Phòng</td>
+                    </tr>
+                    <tr>
+                        <td>NV000001</td>
+                        <td>Đỗ Tuấn Sơn</td>
+                        <td>NAM</td>
+                        <td>19/08/1998</td>
+                        <td>012346789</td>
+                        <td>Hải Phòng</td>
+                    </tr>
+                    <tr>
+                        <td>NV000001</td>
+                        <td>Đỗ Tuấn Sơn</td>
+                        <td>NAM</td>
+                        <td>19/08/1998</td>
+                        <td>012346789</td>
+                        <td>Hải Phòng</td>
+                    </tr>
+                    <tr>
+                        <td>NV000001</td>
+                        <td>Đỗ Tuấn Sơn</td>
+                        <td>NAM</td>
+                        <td>19/08/1998</td>
+                        <td>012346789</td>
+                        <td>Hải Phòng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="paging-bar"></div>
     </div>
 </body>
