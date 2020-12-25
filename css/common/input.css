@@ -4,6 +4,18 @@
     border:1px solid #bbbbbb;
     outline:none;
 }
-.input-search{
-    padding-left:40px;
-}
+    input:focus {
+        border: 1px solid #019160;
+       
+    }
+        input:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+        input:focus::-moz-placeholder {
+            color: transparent;
+        }
+
+
+    .input-search {
+        padding-left: 40px;
+    }
