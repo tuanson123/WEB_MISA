@@ -14,14 +14,20 @@ function loadData() {
             var data = res;
            
             $.each(data, function (index, item) {
+                var dateOfBirthy = item["DateOfBirth"];
+                dateOfBirthy = formatDate();
                 var tr = $(`<tr>
                         <td>`+ item['EmployeeCode'] +`</td>
                         <td>`+ item['FullName'] +`</td>
-                        <td>`+ item['WorkStatus'] +`</td>
-                        <td>`+ item['JoinDate'] +`</td>
+                        <td>`+ item['LastName'] + `</td>
+                        <td>`+ dateOfBirthy +`</td>
                         <td>`+ item['PhoneNumber'] +`</td>
-                        <td>`+ item['Address'] +`</td>
-                        
+                        <td>`+ item['Email'] +`</td>
+                        <td>`+ item['PositionName'] +`</td>
+                        <td>`+ item['DepartmentName'] +`</td>
+                        <td>`+ item['Salary'] +`</td>
+                        <td title="`+ item['Address'] +`">`+ item['Address'] +`</td>
+                        <td>`+ item['WorkStatusName'] +`</td>
                     </tr >`);
                 $('table tbody').append(tr);
                 debugger;
@@ -29,4 +35,12 @@ function loadData() {
         })
         .fail(function (res) { })
     //binding dữ liệu
+
+}
+function formatDate(date) {
+    var date = new Date(date);
+    var day = date.getDate(),
+
+
+    return 
 }
