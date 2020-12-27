@@ -15,7 +15,7 @@ function loadData() {
            
             $.each(data, function (index, item) {
                 var dateOfBirthy = item["DateOfBirth"];
-                dateOfBirthy = formatDate();
+                dateOfBirthy = formatDate(dateOfBirthy);
                 var tr = $(`<tr>
                         <td>`+ item['EmployeeCode'] +`</td>
                         <td>`+ item['FullName'] +`</td>
@@ -40,7 +40,8 @@ function loadData() {
 function formatDate(date) {
     var date = new Date(date);
     var day = date.getDate(),
+        month = date.getMonth() + 1,
+        year = date.getFullYear();
 
-
-    return 
+    return day + '/' + month + '/' + year;
 }
