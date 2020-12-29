@@ -25,6 +25,9 @@ function formatDate(date) {
  * @param {any} money
  */
 function formatMoney(money) {
-    var num = money.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.");
-    return num;
+    if (money) {
+        var num = money.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.");
+        return num;
+    }
+    else return num = "0";
 }
