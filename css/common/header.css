@@ -1,28 +1,32 @@
 ﻿.header {
-    float: left;
+    position: relative;
+    display: flex;
+    align-items: center;
     width: calc(100% - 221px);
     height: 60px;
-    border-bottom-color: #e5e5e5;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    display: flex;
-    font-weight: bold;
-    position: relative;
+    border-bottom: 1px solid #bbbbbb;
 }
-
     .header .header-select {
-        position: absolute;
-        left: 16px;
-        align-self: center;
-        font-size: 13px;
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    .header .header-select select {
+        height: 40px;
+        width: 200px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
     }
 
     .header .account-infor {
         margin: auto 0;
         display: flex;
         position: absolute;
-        right: 30px;
-        align-self: center;
+        right: 24px;
+        align-items: center;
     }
 
         .header .account-infor .account-img {

@@ -5,10 +5,11 @@
     position: absolute;
     left: 221px;
     top: 61px;
+    padding: 16px;
 }
     /*page-title*/
     .content .header-content {
-        padding: 16px;
+        
         display: flex;
         align-items: center;
     }
@@ -23,10 +24,29 @@
             right: 16px;
         }
 
-    .content .paing-bar{
-        width:100%;
-        height:56px;
-        background-color: aquamarine;
-        position:sticky;
-        bottom:0px;
+    .content .paing-bar {
+        width: 100%;
+        height: 56px;
+        position: sticky;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
     }
+
+        
+
+        .content .paing-bar .paging-record-option {
+            margin-left: auto;
+        }
+
+        .content .paing-bar .paging-option {
+            margin-left: auto;
+            display:flex;
+        }
+.btn-select-page{
+   text-align:center;
+  
+}
+.btn-select-page i{
+    margin-top:8px;
+}

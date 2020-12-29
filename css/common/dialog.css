@@ -1,13 +1,14 @@
 ﻿.m-dialog{
-    
+    display:none;
 }
-.m-dialog .dialog-modal{
-    opacity:.4;
-    position:fixed;
-    width:100%;
-    height:100vh;
-    background-color:black;
-    z-index:999;
+
+.m-dialog .dialog-modal {
+    opacity: .4;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 999;
 }
     .m-dialog .dialog-content {
         
