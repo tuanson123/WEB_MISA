@@ -62,7 +62,9 @@
     margin: auto 0;
     background-size: contain;
 }
-
+.nav-item .nav-item-text{
+    text-decoration:none;
+}
 .nav-item-document-online {
     background-image: url('../../content/icon/document-online.png');
 }

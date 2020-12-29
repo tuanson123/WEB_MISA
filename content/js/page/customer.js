@@ -25,7 +25,7 @@ function loadData() {
                     salary = "0";
                 }
                 else {
-                    
+
                     salary = formatMoney(salary);
                 }
                 var checkbox = `<input type="checkbox"/>`;
@@ -40,11 +40,8 @@ function loadData() {
                         <td class="text-align-center">`+ dateOfBirthy + `</td>
                         <td>`+ item['PhoneNumber'] + `</td>
                         <td>`+ item['Email'] + `</td>
-                        <td>`+ item['PositionName'] + `</td>
-                        <td>`+ item['DepartmentName'] + `</td>
-                        <td class="text-align-right">`+ salary + `</td>
                         <td title="`+ item['Address'] + `">` + item['Address'] + `</td>
-                        <td>`+ item['WorkStatusName'] + `</td>
+                        
                     </tr >`);
                 $('table tbody').append(tr);
                 debugger;
@@ -65,7 +62,7 @@ function formatDate(date) {
         return "";
 
     }
-        else {
+    else {
         var day = date.getDate(),
             month = date.getMonth() + 1,
             year = date.getFullYear();
@@ -73,7 +70,7 @@ function formatDate(date) {
         month = month < 10 ? '0' + month : month;
         return day + '/' + month + '/' + year;
     }
-    
+
 }
 /**
  * Format dữ liệu tiền lương
