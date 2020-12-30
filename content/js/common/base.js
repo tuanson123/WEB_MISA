@@ -3,9 +3,19 @@
         this.getDataUrl = null;
         this.setDataUrl();
         this.loadData();
+        this.clickEvent();
     }
     setDataUrl() {
 
+    }
+    clickEvent() {
+        $("#btnShow").click(function () {
+            $("#btnDialog").show();
+        });
+        $("#btnClose").click(function () {
+            $("#btnDialog").hide();
+        });
+        
     }
     /**
      * Load dữ liệu

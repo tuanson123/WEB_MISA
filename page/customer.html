@@ -95,7 +95,7 @@
         <div class="header-content">
             <div class="title">Danh sách Khách Hàng</div>
             <div class="page-future">
-                <button class="m-btn m-btn-default">
+                <button class="m-btn m-btn-default" id="btnShow">
                     <div class="icon-add"></div>
                     <div class="btn-text">Thêm Khách Hàng</div>
 
@@ -221,37 +221,77 @@
             </div>
         </div>
     </div>
-    <div class="m-dialog dialog-detail">
+    <div class="m-dialog dialog-detail" id="btnDialog">
         <div class="dialog-modal"></div>
         <div class="dialog-content">
             <div class="dialog-header">
-                <div class="dialog-header-title">THÔNG TIN NHÂN VIÊN</div>
-                <div class="dialog-header-close">
+                <div class="dialog-header-title">THÔNG TIN KHÁCH HÀNG</div>
+                <div class="dialog-header-close" id="btnClose">
                     <button></button>
                 </div>
             </div>
             <div class="dialog-body">
-                Thông tin chung
-                <div class="m-row">
-                    <div class="m-label">Mã nhân viên</div>
-                    <div class="m-control"><input type="text" /></div>
+                <div class="dialog-body dialog-img">
+                    <div class="img"></div>
+                    <div class="text">Vui lòng chọn ảnh có định dạng<br>.jpg,.jpeg,.png,.gif</div>
                 </div>
-                <div class="m-row">
-                    <div class="m-label">Tên nhân viên</div>
-                    <div class="m-control"><input type="text" /></div>
+                <div class="dialog-body dialog-infor-one">
+                    <div class="m-row">
+                        <div class="m-label">Mã khách hàng(<span>*</span>)</div>
+                        <div class="m-control"><input type="text" /></div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-label">Mã thẻ thành viên</div>
+                        <div class="m-control"><input type="text" /></div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-label">Ngày sinh</div>
+                        <div class="m-control"><input type="text" placeholder="mm/dd/yyyy" class="dialog-body-icon" /></div>
+                    </div>
                 </div>
-                <div class="m-row">
-                    <div class="m-label">Ngày sinh</div>
-                    <div class="m-control"><input type="text" /></div>
+                <div class="dialog-body dialog-infor-two">
+                    <div class="m-row">
+                        <div class="m-label">Họ và tên(<span>*</span>)</div>
+                        <div class="m-control"><input type="text" /></div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-label">Nhóm khách hàng</div>
+                        <div class="m-control"><input type="text" /></div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-label">Gioi tính</div>
+                        <div class="m-control"><div class="m-gender">Nam<input type="radio" name="gender" value="Nam" />Nữ<input type="radio" name="gender" value="Nữ" /></div></div>
+                    </div>
                 </div>
-                <div class="m-row">
-                    <div class="m-label">Số điện thoại di động</div>
-                    <div class="m-control"><input type="text" /></div>
+            </div>
+            <div class="dialog-body-botton">
+                <div class="dialog-body-botton dialog-infor-one">
+                    <div class="m-row">
+                        <div class="m-label">Email</div>
+                        <div class="m-control"><input type="text" /></div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-label">Tên công ty</div>
+                        <div class="m-control"><input type="text" /></div>
+                    </div>
                 </div>
-                Thông tin công việc
+                <div class="dialog-body-botton dialog-infor-two">
+                    <div class="m-row">
+                        <div class="m-label">Số điện thoại</div>
+                        <div class="m-control"><input type="text" /></div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-label">Mã số thuế</div>
+                        <div class="m-control"><input type="text" /></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <button class="dialog-footer cancel">Huỷ</button>
+                <button class="dialog-footer save">Lưu</button>
             </div>
         </div>
-
+        
     </div>
     <script src="../content/lib/jquery-3.5.1.min.js"></script>
     <script src="../content/js/common/common.js"></script>

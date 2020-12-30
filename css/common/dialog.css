@@ -14,8 +14,8 @@
         
         padding:24px;
         position: absolute;
-        width: 800px;
-        height: 400px;
+        width: 650px;
+        height: 500px;
         background-color: #ffffff;
         z-index: 1000;
         top:calc(50% - 200px);
@@ -58,3 +58,45 @@
             text-transform:uppercase;
             font-weight:bold;
         }
+/*Nội dung form của dialog*/
+.dialog-content .dialog-body {
+    float: left;
+}
+.dialog-img .img {
+    background-image: url('../../content/img/default-avatar.jpg');
+    background-repeat:no-repeat;
+    border-radius:50%;
+    background-size:contain;
+    width:200px;
+    height:200px;
+    border-color:gainsboro;
+    border-style:solid;
+    border-width:thin;
+}
+.dialog-body-icon {
+    background-image: url('../../content/icon/document-online.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:160px;
+}
+.dialog-img .text {
+    text-align: center;
+    font-weight: bold;
+}
+.dialog-content span {
+    color:red;
+}
+.dialog-infor-one{
+    margin-left:15px;
+}
+.dialog-infor-two {
+    margin-left: 15px;
+}
+.dialog-body .m-gender {
+    padding-top: 10px;
+    
+}
+.dialog-body-botton {
+    float:left;
+    
+}
