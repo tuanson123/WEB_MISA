@@ -36,7 +36,15 @@
      *Thực hiện lưu dữ liệu khi nhấn lưu
      * **/
         $('#btnSave').click(function () {
-            alert('Lưu lại dữ liệu');
+            //Validate dữ liệu
+
+            //thu thập thông tin dữ liệu được nhập
+
+            //Gọi service tương ứng thực hiên lưu dữ liệu
+
+            //Sau khi lưu thành công thì: 
+            //+đưa ra thông báo 
+            //+ẩn form chi tiết, load lại dữ liệu
         });
     /**
     *Hiện thị thông tin chi tiết khi click đúp chuột vào
