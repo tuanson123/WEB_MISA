@@ -2,20 +2,51 @@
     constructor() {
         this.getDataUrl = null;
         this.setDataUrl();
-        this.loadData();
         this.clickEvent();
+        this.loadData();
+        
     }
     setDataUrl() {
 
     }
     clickEvent() {
+        /**
+         *Ân hiện form
+         * **/
+
         $("#btnShow").click(function () {
             $("#btnDialog").show();
         });
         $("#btnClose").click(function () {
             $("#btnDialog").hide();
         });
+        /**
+         *Nạp dữ liệu khi nhấn nạp
+         * **/
+        $('#btnRefresh').click(function () {
+            alert('Load lại dữ liệu');
+        });
+        /**
+         *Ân dữ liệu khi nhấn hủy
+         * **/
+        $('#btnCancel').click(function () {
+            $("#btnDialog").hide();
+        });
+        /**
+     *Thực hiện lưu dữ liệu khi nhấn lưu
+     * **/
+        $('#btnSave').click(function () {
+            alert('Lưu lại dữ liệu');
+        });
+    /**
+    *Hiện thị thông tin chi tiết khi click đúp chuột vào
+    * **/
+        $('table tbody').on('dblclick', 'tr', function () {
+            $("#btnDialog").show();     
+        })
+
         
+
     }
     /**
      * Load dữ liệu
@@ -70,6 +101,6 @@
             //ghi log lỗi:
             console.log(e);
         }
-        
+
     }
 }

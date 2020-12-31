@@ -51,6 +51,7 @@
     border-radius: 50%;
     background-color: #e9ebee;
     cursor: pointer !important;
+    outline:none;
 }
 
     .btn-pagenumber:hover {
@@ -80,3 +81,8 @@
         background-color: #ffffff;
         border: 1px solid #ccc;
     }
+    .btn-cancel{
+        margin-right: 10px;
+    }
+
+

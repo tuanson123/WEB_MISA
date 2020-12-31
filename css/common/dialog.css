@@ -15,12 +15,13 @@
         padding:24px;
         position: absolute;
         width: 650px;
-        height: 500px;
+        height: 485px;
         background-color: #ffffff;
         z-index: 1000;
         top:calc(50% - 200px);
         left:calc(50% - 400px);
         border-radius:5px;
+        font-size:15px;
 
     }
     .m-dialog .dialog-header{
@@ -79,6 +80,12 @@
     background-size: contain;
     background-position:160px;
 }
+.dialog-gender-icon {
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../../content/icon/radio-checked.png');
+}
 .dialog-img .text {
     text-align: center;
     font-weight: bold;
@@ -99,4 +106,32 @@
 .dialog-body-botton {
     float:left;
     
+}
+    .dialog-body-botton .dialog-infor-one input {
+        width: 370px;
+    }
+.dialog-content .dialog-footer {
+    height: 85px;
+    background-color: gainsboro;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+
+.dialog-footer-botton {
+    display: flex;
+    position: absolute;
+    right: 32px;
+}
+.btn-cancel{
+    margin-right: 10px;
+}
+.btn-save{
+    width: 90px;
+}
+.dialog-footer-botton .btn-save {
+    padding: 0 24px;
 }
