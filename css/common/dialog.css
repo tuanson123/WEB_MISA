@@ -1,41 +1,43 @@
-﻿.m-dialog{
-    display:none;
+﻿.m-dialog {
+    display: none;
 }
 
-.m-dialog .dialog-modal {
-    opacity: .4;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    z-index: 999;
-}
+    .m-dialog .dialog-modal {
+        opacity: .4;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        z-index: 999;
+    }
+
     .m-dialog .dialog-content {
-        
-        padding:24px;
+        padding: 24px;
         position: absolute;
         width: 650px;
-        height: 485px;
+        height: 515px;
         background-color: #ffffff;
         z-index: 1000;
-        top:calc(50% - 200px);
-        left:calc(50% - 400px);
-        border-radius:5px;
-        font-size:15px;
+        top: calc(50% - 200px);
+        left: calc(50% - 400px);
+        border-radius: 5px;
+        font-size: 15px;
+    }
 
+    .m-dialog .dialog-header {
+        display: flex;
     }
-    .m-dialog .dialog-header{
-        display:flex;
-    }
-        .m-dialog .dialog-header .dialog-header-close{
-            position:absolute;
-            right:0;
-            top:0;
+
+        .m-dialog .dialog-header .dialog-header-close {
+            position: absolute;
+            right: 0;
+            top: 0;
         }
+
             .m-dialog .dialog-header .dialog-header-close:hover {
-                
                 border-radius: 0 5px 0 0;
             }
+
             .m-dialog .dialog-header .dialog-header-close button {
                 width: 40px;
                 height: 40px;
@@ -43,75 +45,86 @@
                 border: none;
                 outline: none;
                 cursor: pointer;
-                background-color:#ffffff;
+                background-color: #ffffff;
                 background-image: url('../../content/icon/x.svg');
-                background-repeat:no-repeat;
-                background-position:center;
-                background-size:20px;
-                opacity:.7;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px;
+                opacity: .7;
             }
+
                 .m-dialog .dialog-header .dialog-header-close button:hover {
                     background-color: #ccc;
                 }
-/*Tiêu đề của dialog*/
-        .m-dialog .dialog-header .dialog-header-title{
-            font-size:20px;
-            text-transform:uppercase;
-            font-weight:bold;
+        /*Tiêu đề của dialog*/
+        .m-dialog .dialog-header .dialog-header-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
         }
 /*Nội dung form của dialog*/
 .dialog-content .dialog-body {
     float: left;
 }
+
 .dialog-img .img {
     background-image: url('../../content/img/default-avatar.jpg');
-    background-repeat:no-repeat;
-    border-radius:50%;
-    background-size:contain;
-    width:200px;
-    height:200px;
-    border-color:gainsboro;
-    border-style:solid;
-    border-width:thin;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    border-color: gainsboro;
+    border-style: solid;
+    border-width: thin;
 }
+
 .dialog-body-icon {
     background-image: url('../../content/icon/document-online.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:160px;
+    background-position: 160px;
 }
+
 .dialog-gender-icon {
-    
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('../../content/icon/radio-checked.png');
 }
+
 .dialog-img .text {
     text-align: center;
     font-weight: bold;
 }
+
 .dialog-content span {
-    color:red;
+    color: red;
 }
-.dialog-infor-one{
-    margin-left:15px;
+
+.dialog-infor-one {
+    margin-left: 0px;
+}
+.dialog-body .dialog-infor-one {
+    margin-left: 15px;
 }
 .dialog-infor-two {
     margin-left: 15px;
 }
+
 .dialog-body .m-gender {
     padding-top: 10px;
-    
 }
+
 .dialog-body-botton {
-    float:left;
-    
+    float: left;
 }
+
     .dialog-body-botton .dialog-infor-one input {
-        width: 370px;
+        width: 390px;
     }
+
 .dialog-content .dialog-footer {
-    height: 85px;
+    height: 50px;
     background-color: gainsboro;
     display: flex;
     position: absolute;
@@ -126,12 +139,24 @@
     position: absolute;
     right: 32px;
 }
-.btn-cancel{
+
+.btn-cancel {
     margin-right: 10px;
 }
-.btn-save{
+
+.btn-save {
     width: 90px;
 }
+
 .dialog-footer-botton .btn-save {
     padding: 0 24px;
+}
+
+.dialog-select select {
+    width: 205px;
+    height: 37px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #bbbbbb;
 }

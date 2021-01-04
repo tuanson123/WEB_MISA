@@ -10,3 +10,6 @@
 .m-label{
     margin-bottom:4px;
 }
+input.border-red{
+    border: 1px solid #ff0000;
+}
