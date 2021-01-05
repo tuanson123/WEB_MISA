@@ -15,10 +15,36 @@
         /**
          *Ân hiện form
          * **/
+        try {
+            $("#btnShow").click(function () {
+                //Hiển thị thông tin chi tiết
+                $("#btnDialog").show();
+                //Load dữ liệu cho các combobox
+                var select = $('select#cbxCustomerGroup');
+                select.empty();
+                //Load chờ màn hình
+                $('.loading').show();
+                //Lấy dữ liệu nhóm khách hàng
+                $.ajax({
+                    url: me.host + "/api/customergroups",
+                    method: "GET"
 
-        $("#btnShow").click(function () {
-            $("#btnDialog").show();
-        });
+                }).done(function (res) {
+                    if (res) {
+                        $.each(res, function (index, obj) {
+                            var option = $(`<option value="${obj.CustomerGroupId}">${obj.CustomerGroupName}</option>`);
+                            select.append(option);
+                        })
+                    }
+                    $('.loading').hide();
+                }).fail(function (res) {
+                    $('.loading').hide();
+                })
+            });
+        }
+        catch (e) {
+            console.log(e);
+        }
         $("#btnClose").click(function () {
             $("#btnDialog").hide();
         });
@@ -122,7 +148,8 @@
          */
         $('input[type="email"]').blur(function () {
             var valueToTest = $(this).val();
-            var testEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            var testEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
             if (!testEmail.test(valueToTest)) {
                 $(this).addClass('border-red');
                 $(this).attr('title', 'Email không đúng định dạng');
@@ -142,13 +169,14 @@
      * Load dữ liệu
      * CreatedBy:DTSON(12/29/2020)
      * */
+
     loadData() {
         var me = this;
         //lấy thông tin các cột giữ liệu:
         try {
             var column = $('table thead th');
             var getDataUrl = this.getDataUrl;
-
+            $('.loading').show();
             $.ajax(
                 {
                     url: me.host + me.apiRouter,
@@ -183,6 +211,7 @@
                             $(tr).append(td);
                         })
                         $('table tbody').append(tr);
+                        $('.loading').hide();
                     })
 
                 })
@@ -190,6 +219,7 @@
         }
         catch (e) {
             //ghi log lỗi:
+            $('.loading').hide();
             console.log(e);
         }
 

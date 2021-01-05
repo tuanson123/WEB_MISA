@@ -13,6 +13,9 @@ class EmployeeJS extends BaseJS {
     setDataUrl() {
         this.getDataUrl = "http://api.manhnv.net/api/employees";
     }
+    setApiRouter() {
+        this.apiRouter = "/api/employees";
+    }
     /**
      * Load dữ liệu
      * CreateBy:DTSON(12/29/2020)

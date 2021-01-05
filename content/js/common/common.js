@@ -31,3 +31,4 @@ function formatMoney(money) {
     }
     else return num = "0";
 }
+

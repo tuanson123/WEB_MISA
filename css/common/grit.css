@@ -12,4 +12,8 @@ table th, td {
     text-overflow: ellipsis;
     white-space:nowrap;
     max-width:50px;
+    cursor:pointer;
+}
+table tr:hover{
+    background-color:ghostwhite;
 }
