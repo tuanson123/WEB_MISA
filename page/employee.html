@@ -228,35 +228,76 @@
 
     <div class="m-dialog dialog-detail" id="btnDialog">
         <div class="dialog-modal"></div>
-        <div class="dialog-content">
+        <div class="dialog-content employee">
             <div class="dialog-header">
-                <div class="dialog-header-title">THÔNG TIN NHÂN VIÊN</div>
+                <div class="dialog-header-title">THÔNG TIN KHÁCH HÀNG</div>
                 <div class="dialog-header-close" id="btnClose">
                     <button></button>
                 </div>
             </div>
             <div class="dialog-body">
-                Thông tin chung
-                <div class="m-row">
-                    <div class="m-label">Mã nhân viên</div>
-                    <div class="m-control"><input type="text" /></div>
+                <div class="dialog-body dialog-img">
+                    <div class="img"></div>
+                    <div class="text">Vui lòng chọn ảnh có định dạng<br>.jpg,.jpeg,.png,.gif</div>
                 </div>
-                <div class="m-row">
-                    <div class="m-label">Tên nhân viên</div>
-                    <div class="m-control"><input type="text" /></div>
+                <div class="dialog-body dialog-infor-one">
+                    <div class="m-row">
+                        <div class="m-label">Mã khách hàng(<span>*</span>)</div>
+                        <div class="m-control"><input fieldName="CustomerCode" id="txtCustomerCode" type="text" class="input-required" /></div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-label">Mã thẻ thành viên</div>
+                        <div class="m-control"><input fieldName="MemberCardCode" id="txtMemberCardCode" type="text" /></div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-label">Ngày sinh</div>
+                        <div class="m-control">
+                            <input fieldname="dateofbirth" id="txtdateofbirth" type="text" placeholder="mm/dd/yyyy" class="dialog-body-icon" />
+
+                        </div>
+
+                    </div>
                 </div>
-                <div class="m-row">
-                    <div class="m-label">Ngày sinh</div>
-                    <div class="m-control"><input type="text" /></div>
+                <div class="dialog-body dialog-infor-two">
+                    <div class="m-row">
+                        <div class="m-label">Họ và tên(<span>*</span>)</div>
+                        <div class="m-control"><input fieldName="FullName" id="txtFullName" type="text" class="input-required" /></div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-label">Nhóm khách hàng</div>
+                        <div class="m-control dialog-select">
+                            <select id="cbxCustomerGroup" fieldName="CustomerGroupName" fieldValue="CustomerGroupId" api="/api/customergroups">
+                                <!--<option value="0cb5da7c-59cd-4953-b17e-c9adc9161663">Khach vip</option>
+                                <option value="7a0b757e-41eb-4df6-c6f8-494a84b910f4">Khách thường</option>
+                                <option value="19165ed7-212e-21c4-0428-030d4265475f">Khách vãng lai</option>-->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="m-row">
+                        <div class="m-label">Gioi tính</div>
+                        <div class="m-control"><div class="m-gender"><input fieldName="Gender" type="radio" name="gender" value="1" />Nam<input fieldName="Gender" type="radio" name="gender" value="0" checked />Nữ</div></div>
+                    </div>
                 </div>
-                <div class="m-row">
-                    <div class="m-label">Số điện thoại di động</div>
-                    <div class="m-control"><input type="text" /></div>
-                </div>
-                Thông tin công việc
             </div>
+            
+            <div class="dialog-footer">
+                <div class="dialog-footer-botton">
+                    <button class="m-btn btn-cancel" id="btnCancel">Huỷ</button>
+                    <button class="m-btn btn-save" id="btnSave"><i class="far fa-save"></i>Lưu</button>
+                </div>
+
+            </div>
+
         </div>
 
+    </div>
+    <div class="loading">
+        <div class="loading-modal">
+
+        </div>
+        <div class="loading-icon">
+
+        </div>
     </div>
     <script src="../content/lib/jquery-3.5.1.min.js"></script>
     <script src="../content/js/common/common.js"></script>
