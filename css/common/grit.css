@@ -17,3 +17,9 @@ table th, td {
 table tr:hover{
     background-color:ghostwhite;
 }
+table th{
+    position:sticky;
+    z-index:5;
+    top:0;
+    background-color:white;
+}
